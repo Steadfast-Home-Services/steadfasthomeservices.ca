@@ -1,0 +1,27 @@
+{
+  "_legend": {
+    "season":       "Label shown on the card. Examples: 'Spring Season', 'Lawn Season', 'Snow Season', 'Off Season'",
+    "status":       "Badge shown top-right. Examples: 'Active', 'On Call', 'Standby', 'Closed'",
+    "today_area":   "City you are working in today. Examples: 'St. Catharines', 'Niagara-on-the-Lake', 'Welland'",
+    "last_updated": "Date shown on the card. Update this whenever you change the file. Format: 'April 5, 2026'",
+    "alert":        "Storm or urgent alert banner. Leave empty '' to hide it. Example: 'Storm Watch Tonight'",
+    "service_states": {
+      "active":   "Service is running now — shows gold bar",
+      "upcoming": "Service starts soon — shows grey bar, says 'Starting Soon'",
+      "standby":  "Service is on call / weather dependent — shows grey bar, says 'On Call'",
+      "done":     "Season is over — shows green bar, says 'Season Over'"
+    }
+  },
+
+  "season": "Spring Season",
+  "status": "Active",
+  "today_area": "St. Catharines",
+  "last_updated": "April 5, 2026",
+  "alert": "",
+
+  "services": [
+    { "name": "Spring Cleanup",       "icon": "🌱", "state": "active"   },
+    { "name": "Lawn Mowing & Edging", "icon": "✂️", "state": "upcoming" },
+    { "name": "Snow Removal",         "icon": "❄️", "state": "done"     }
+  ]
+}

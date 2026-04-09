@@ -1,0 +1,104 @@
+// =============================================
+// STEADFAST HOME SERVICES — SEO SCHEMA
+// LocalBusiness JSON-LD injected on every page
+// =============================================
+
+(function () {
+  const localBusiness = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://steadfasthomeservices.ca",
+    "name": "Steadfast Home Services",
+    "url": "https://steadfasthomeservices.ca",
+    "telephone": "+12896213035",
+    "email": "info@steadfasthomeservices.ca",
+    "logo": "https://steadfasthomeservices.ca/assets/logo.png",
+    "image": "https://steadfasthomeservices.ca/assets/logo.png",
+    "description": "Professional landscaping and snow removal serving the Niagara Region, Ontario. Services include lawn mowing, snow plowing, spring and fall cleanup, and garden weed picking.",
+    "foundingDate": "2022",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "ON",
+      "addressCountry": "CA",
+      "addressLocality": "Niagara Region"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "43.0896",
+      "longitude": "-79.0849"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "St. Catharines" },
+      { "@type": "City", "name": "Niagara Falls" },
+      { "@type": "City", "name": "Niagara-on-the-Lake" },
+      { "@type": "City", "name": "Welland" },
+      { "@type": "City", "name": "Grimsby" },
+      { "@type": "City", "name": "Thorold" },
+      { "@type": "City", "name": "Pelham" },
+      { "@type": "City", "name": "Fort Erie" },
+      { "@type": "City", "name": "Lincoln" },
+      { "@type": "City", "name": "Port Colborne" }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Landscaping & Snow Removal Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "name": "Lawn Care Plan",
+          "description": "Weekly mowing & edging, spring & fall cleanup, trimming & debris removal, photo report each visit.",
+          "price": "179.00",
+          "priceCurrency": "CAD",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "179.00",
+            "priceCurrency": "CAD",
+            "unitText": "month"
+          },
+          "itemOffered": { "@type": "Service", "name": "Lawn Mowing & Edging" }
+        },
+        {
+          "@type": "Offer",
+          "name": "Year-Round Bundle",
+          "description": "Weekly mowing & edging, spring & fall cleanup, fertilization & weed picking, snow plowing, salting, real-time SMS alerts, photo report every visit.",
+          "price": "259.00",
+          "priceCurrency": "CAD",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "259.00",
+            "priceCurrency": "CAD",
+            "unitText": "month"
+          },
+          "itemOffered": { "@type": "Service", "name": "Lawn Care & Snow Removal Bundle" }
+        },
+        {
+          "@type": "Offer",
+          "name": "Snow Removal Season Pass",
+          "description": "Triggered at 2cm+ snowfall, driveway & walkway clearing, hand shovelling, salt/ice melt, SMS alerts, photo confirmation each visit.",
+          "price": "179.00",
+          "priceCurrency": "CAD",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "179.00",
+            "priceCurrency": "CAD",
+            "unitText": "month"
+          },
+          "itemOffered": { "@type": "Service", "name": "Snow Plowing & Salting" }
+        },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Spring Cleanup" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fall Cleanup" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Garden Weed Picking" } }
+      ]
+    },
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=100092888058014",
+      "https://www.instagram.com/steadfasthomeservices/",
+      "https://www.youtube.com/@SteadfastHomeServices"
+    ]
+  };
+
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.text = JSON.stringify(localBusiness);
+  document.head.appendChild(script);
+})();

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Steadfast Home Services | Landscaping & Snow Removal — Niagara Region</title>
+  <meta name="description" content="Professional landscaping and snow removal in the Niagara Region. Steadfast Home Services provides year-round property care. Real-time updates. Professional results." />
+  <meta name="keywords" content="landscaping Niagara, snow removal Niagara, lawn care Niagara Region, Steadfast Home Services" />
+  <link rel="canonical" href="https://steadfasthomeservices.ca" />
+
+  <!-- Phone -->
+  <meta name="phone" content="+1-289-621-3035" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Steadfast Home Services | Landscaping & Snow Removal — Niagara Region" />
+  <meta property="og:description" content="Professional landscaping and snow removal in the Niagara Region. Serving St. Catharines, Niagara Falls, Welland & surrounding areas." />
+  <meta property="og:url" content="https://steadfasthomeservices.ca" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://steadfasthomeservices.ca/assets/logo.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Steadfast Home Services | Niagara Region" />
+  <meta name="twitter:description" content="Professional landscaping and snow removal in the Niagara Region." />
+  <meta name="twitter:image" content="https://steadfasthomeservices.ca/assets/logo.png" />
+
+  <!-- Robots -->
+  <meta name="robots" content="index, follow" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="schema.js" defer></script>
+  <script src="animations.js" defer></script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z38VHXT0V1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Z38VHXT0V1');
+  </script>
+</head>
+<body>
+
+  <!-- =============================================
+       NAVIGATION
+       ============================================= -->
+  <nav>
+    <div class="nav-logo">
+      <!-- Replace src with actual logo path once added to assets folder -->
+      <div class="nav-logo-text">
+        <span>STEADFAST</span>
+        <span>HOME SERVICES</span>
+      </div>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li> 
+    </ul>
+
+    <a href="contact.html" class="btn-primary">Get a Free Quote</a>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!--
+    VIDEO BACKGROUND — swap in when footage is ready:
+    Replace the section.hero background with:
+
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="assets/hero.mp4" type="video/mp4" />
+    </video>
+
+    And add to styles.css:
+    .hero { position: relative; }
+    .hero-video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0.25; z-index:0; }
+    .hero-content, .hero-card { position: relative; z-index: 1; }
+  -->
+
+  <!-- =============================================
+       HERO SECTION
+       ============================================= -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">Landscaping &amp; Snow Removal &middot; Niagara Region</div>
+
+      <h1>Home Maintenance,<br /><span class="hero-typewrite">Reimagined.</span></h1>
+
+      <p>
+        Steadfast Home Services provides professional care for your property.
+        <strong>Real-time updates.</strong>
+        <strong>Professional grade results.</strong>
+      </p>
+
+      <div class="hero-ctas">
+        <a href="contact.html" class="btn-primary">Get an Instant Quote &rarr;</a>
+        <a href="#services" class="btn-outline">View Our Services</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">75+</span>
+          <span class="stat-label">Properties Serviced</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">4yr</span>
+          <span class="stat-label">In Business</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">24/7</span>
+          <span class="stat-label">Storm Response</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Property Activity Card — powered by status.json -->
+    <div class="hero-card" id="activityCard">
+      <div class="hero-card-header">
+        <div>
+          <div class="hero-card-title">Property Activity</div>
+          <div class="hero-card-subtitle" id="cardSubtitle">Niagara Region &middot; Loading...</div>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px;">
+          <div class="storm-alert" id="cardAlert" style="display:none;"></div>
+          <div class="status-badge" id="cardStatus">...</div>
+        </div>
+      </div>
+      <div id="cardServices"></div>
+      <div class="crew-item">
+        <div class="crew-avatar">BC</div>
+        <div>
+          <div class="crew-name">Bailey Campbell</div>
+          <div class="crew-role">Lead Crew &middot; Steadfast Home Services</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       SERVICES SECTION
+       ============================================= -->
+  <section class="services" id="services">
+    <div class="section-header">
+      <div class="section-label">Our Services</div>
+      <h2 class="section-title">Professional Care, Every Season</h2>
+      <p class="section-sub">From the first spring thaw to the last winter storm, Steadfast has your property covered year-round.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">✂️</div>
+        <h3>Lawn Mowing &amp; Edging</h3>
+        <p>Weekly or bi-weekly cuts at a 3-inch height using professional Toro equipment. Weed whacking and garden bed edging included in every visit.</p>
+        <a href="services.html#mowing" class="service-link">Learn more &rarr;</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">❄️</div>
+        <h3>Snow Plowing &amp; Salting</h3>
+        <p>Triggered at 2 cm+ snowfall, 24/7 during snow season. We hand shovel every property and apply quality ice melt — before you wake up.</p>
+        <a href="services.html#snow" class="service-link">Learn more &rarr;</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🌱</div>
+        <h3>Spring Cleanup</h3>
+        <p>Full bed cleaning, weeding, edging, and a complete rake and blow of your entire lawn. All winter debris removed — property ready for the season.</p>
+        <a href="services.html#spring" class="service-link">Learn more &rarr;</a>
+      </div>
+
+      <div class="service-card service-card--centered">
+        <div class="service-icon">🍂</div>
+        <h3>Fall Cleanup</h3>
+        <p>Full leaf collection, weed removal, branch trimming, and winter prep starting in October. Your lawn set up to bounce back strong in spring.</p>
+        <a href="services.html#fall" class="service-link">Learn more &rarr;</a>
+      </div>
+
+      <div class="service-card service-card--centered">
+        <div class="service-icon">🌿</div>
+        <h3>Garden Weed Picking <span style="font-size:11px;background:var(--gold);color:var(--navy);padding:2px 8px;border-radius:10px;font-weight:700;vertical-align:middle;">ADD-ON</span></h3>
+        <p>Premium add-on to any lawn care plan. We weed your garden beds every visit, re-edge monthly, and keep your gardens looking pristine all season long.</p>
+        <a href="services.html#weed" class="service-link">Learn more &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       PRICING SECTION
+       ============================================= -->
+  <section class="pricing" id="pricing">
+    <div class="section-header">
+      <div class="section-label">Season Plans &middot; Transparent Pricing</div>
+      <h2 class="section-title">Choose Your Service Plan</h2>
+      <p class="section-sub">Lawn care, snow removal, or both — every plan includes real-time notifications, photo reports, and a dedicated crew.</p>
+    </div>
+
+    <div class="pricing-grid">
+
+      <!-- Lawn Care -->
+      <div class="pricing-card">
+        <div class="price-label">🌿 Lawn Care</div>
+        <div>
+          <span class="price-amount">$129</span>
+          <span class="price-period">/mo</span>
+        </div>
+        <div class="price-desc">Spring through Fall season<br />Billed monthly &middot; No agreement required</div>
+        <hr class="price-divider" />
+        <ul class="features-list">
+          <li class="feature-item included">Bi-weekly mowing &amp; edging</li>
+          <li class="feature-item included">Spring &amp; fall cleanup</li>
+          <li class="feature-item included">Trimming &amp; debris removal</li>
+          <li class="feature-item included">Photo report each visit</li>
+          <li class="feature-item excluded">Snow removal</li>
+          <li class="feature-item excluded">Fertilization</li>
+        </ul>
+        <a href="contact.html" class="btn-outline">Get Started</a>
+      </div>
+
+      <!-- Year-Round Bundle (Featured) -->
+      <div class="pricing-card featured">
+        <div class="best-value-badge">BEST VALUE</div>
+        <div class="price-label">🌿❄️ Year-Round Bundle</div>
+        <div>
+          <span class="price-amount">$229</span>
+          <span class="price-period">/mo</span>
+        </div>
+        <div class="price-desc">Lawn care + snow removal, 12 months<br />Annual service agreement required</div>
+        <hr class="price-divider" />
+        <ul class="features-list">
+          <li class="feature-item included">Weekly mowing &amp; edging</li>
+          <li class="feature-item included">Spring &amp; fall cleanup</li>
+          <li class="feature-item included">Fertilization &amp; weed picking (2x)</li>
+          <li class="feature-item included">Snow plowing — driveway &amp; walks</li>
+          <li class="feature-item included">Salting / ice melt after each plow</li>
+          <li class="feature-item included">Real-time SMS storm alerts</li>
+          <li class="feature-item included">Photo report every visit</li>
+        </ul>
+        <a href="contact.html" class="btn-primary">Get an Instant Quote &rarr;</a>
+      </div>
+
+      <!-- Snow Removal -->
+      <div class="pricing-card">
+        <div class="price-label">❄️ Snow Removal</div>
+        <div>
+          <span class="price-amount">$149</span>
+          <span class="price-period">/mo</span>
+        </div>
+        <div class="price-desc">Winter season pass — Nov through Apr<br />Seasonal service agreement required</div>
+        <hr class="price-divider" />
+        <ul class="features-list">
+          <li class="feature-item included">Triggered at 2 cm+ snowfall</li>
+          <li class="feature-item included">Driveway &amp; front walkway plowing</li>
+          <li class="feature-item included">Salt / ice melt application</li>
+          <li class="feature-item included">Pre &amp; post-storm SMS alerts</li>
+          <li class="feature-item included">Photo confirmation each visit</li>
+          <li class="feature-item excluded">Lawn care services</li>
+        </ul>
+        <a href="contact.html" class="btn-outline">Reserve Season Pass</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============================================
+       SERVICE AREA (SEO — city keyword coverage)
+       ============================================= -->
+  <section class="service-area">
+    <div class="section-label">Where We Work</div>
+    <h2>Proudly Serving the Niagara Region</h2>
+    <p>
+      Steadfast Home Services provides professional landscaping and snow removal across the Niagara Region, Ontario — including
+      <strong>St. Catharines</strong>, <strong>Niagara Falls</strong>, <strong>Niagara-on-the-Lake</strong>,
+      <strong>Welland</strong>, <strong>Grimsby</strong>, <strong>Thorold</strong>, <strong>Pelham</strong>,
+      <strong>Fort Erie</strong>, <strong>Lincoln</strong>, and <strong>Port Colborne</strong>.
+    </p>
+    <a href="contact.html" class="btn-primary">Get a Free Quote &rarr;</a>
+  </section>
+
+  <!-- =============================================
+       FOOTER
+       ============================================= -->
+  <footer id="contact">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="nav-logo-text">
+          <span class="footer-logo-title">STEADFAST</span>
+          <span class="footer-logo-sub">HOME SERVICES</span>
+        </div>
+        <p>Professional landscaping and snow removal in the Niagara Region. Your property, taken care of — every season.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=100092888058014" target="_blank" rel="noopener noreferrer" class="social-link">📘 Facebook</a>
+          <a href="https://www.instagram.com/steadfasthomeservices/" target="_blank" rel="noopener noreferrer" class="social-link">📸 Instagram</a>
+          <a href="https://www.youtube.com/@SteadfastHomeServices" target="_blank" rel="noopener noreferrer" class="social-link">▶️ YouTube</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#mowing">Lawn Mowing &amp; Edging</a></li>
+          <li><a href="services.html#snow">Snow Plowing &amp; Salting</a></li>
+          <li><a href="services.html#spring">Spring Cleanup</a></li>
+          <li><a href="services.html#fall">Fall Cleanup</a></li>
+          <li><a href="services.html#weed">Garden Weed Picking</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@steadfasthomeservices.ca">info@steadfasthomeservices.ca</a></li>
+          <li><a href="tel:+12896213035">(289) 621-3035</a></li>
+          <li>Niagara Region, ON</li>
+          <li><a href="contact.html">Get a Free Quote</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Steadfast Home Services. All rights reserved.</p>
+      <p>steadfasthomeservices.ca</p>
+    </div>
+  </footer>
+
+  <script>
+    // Load live status from status.json
+    fetch('status.json')
+      .then(r => r.json())
+      .then(data => {
+        // Subtitle: region + season only (no daily area or date to maintain)
+        document.getElementById('cardSubtitle').textContent = 'Niagara Region · ' + data.season;
+
+        // Status badge
+        document.getElementById('cardStatus').textContent = data.status;
+
+        // Alert banner (only shown if alert text is set)
+        if (data.alert) {
+          const alert = document.getElementById('cardAlert');
+          alert.textContent = '⚠ ' + data.alert;
+          alert.style.display = 'flex';
+        }
+
+        // Service items
+        const stateMap = {
+          active:   { label: 'Active',     css: 'status-progress', bar: 'bar-gold'  },
+          upcoming: { label: 'Starting Soon', css: 'status-oncall', bar: 'bar-grey' },
+          standby:  { label: 'On Call',    css: 'status-oncall',   bar: 'bar-grey'  },
+          done:     { label: 'Season Over', css: 'status-complete', bar: 'bar-green' }
+        };
+
+        const container = document.getElementById('cardServices');
+        data.services.forEach(svc => {
+          const s = stateMap[svc.state] || stateMap.standby;
+          container.innerHTML += `
+            <div class="job-item">
+              <div class="job-icon">${svc.icon}</div>
+              <div class="job-info">
+                <div class="job-name">${svc.name}</div>
+                <div class="job-bar"><div class="job-bar-fill ${s.bar}"></div></div>
+              </div>
+              <span class="job-status ${s.css}">${s.label}</span>
+            </div>`;
+        });
+      })
+      .catch(() => {
+        document.getElementById('cardSubtitle').textContent = 'Niagara Region';
+        document.getElementById('cardStatus').textContent = 'Active';
+      });
+  </script>
+</body>
+</html>

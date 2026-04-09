@@ -1,0 +1,96 @@
+/* =============================================
+   PRICING PAGE — ADDITIONAL STYLES
+   ============================================= */
+
+.pricing-header {
+  text-align: center;
+  padding: 80px 60px 40px;
+}
+
+.pricing-header h1 {
+  font-size: 52px;
+  font-weight: 800;
+  margin: 16px 0 14px;
+}
+
+.pricing-header p {
+  font-size: 18px;
+  color: var(--text-muted);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Fine Print */
+.fine-print {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px 60px 60px;
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.8;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.fine-print h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 14px;
+}
+
+.fine-print strong {
+  color: var(--white);
+}
+
+/* FAQ */
+.faq {
+  padding: 60px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.faq-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.faq-item {
+  background-color: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 22px 24px;
+}
+
+.faq-item h4 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.faq-item p {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+/* Reuse services-cta from services.css */
+.services-cta {
+  text-align: center;
+  padding: 80px 60px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.services-cta h2 { font-size: 36px; font-weight: 800; margin-bottom: 12px; }
+.services-cta p { font-size: 15px; color: var(--text-muted); margin-bottom: 28px; }
+
+@media (max-width: 768px) {
+  .pricing-header { padding: 60px 30px 30px; }
+  .pricing-header h1 { font-size: 38px; }
+  .fine-print { padding: 30px; }
+  .faq { padding: 40px 30px; }
+  .faq-list { grid-template-columns: 1fr; }
+  .services-cta { padding: 60px 30px; }
+}
