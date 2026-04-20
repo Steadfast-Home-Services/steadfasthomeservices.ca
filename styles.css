@@ -813,8 +813,9 @@ footer {
   footer { padding: 40px 30px 20px; }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   nav { padding: 16px 20px; }
+  nav > .btn-primary { display: none; }
   .nav-links { display: none; }
   .nav-links.is-open {
     display: flex;
@@ -887,7 +888,7 @@ footer {
 }
 .nav-overlay.is-open { display: block; }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .nav-hamburger { display: flex; }
 }
 
