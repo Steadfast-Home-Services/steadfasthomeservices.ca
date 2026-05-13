@@ -79,6 +79,22 @@
         <div id="ba23e5e8-1fd2-4794-94de-17b968d4470d-1238116"></div>
         <link rel="stylesheet" href="https://d3ey4dbjkt2f6s.cloudfront.net/assets/external/work_request_embed.css" media="screen" />
         <script src="https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js" clienthub_id="ba23e5e8-1fd2-4794-94de-17b968d4470d-1238116" form_url="https://clienthub.getjobber.com/client_hubs/ba23e5e8-1fd2-4794-94de-17b968d4470d/public/work_request/embedded_work_request_form?form_id=1238116"></script>
+        <script>
+          (function() {
+            function resizeJobber() {
+              var container = document.getElementById('ba23e5e8-1fd2-4794-94de-17b968d4470d-1238116');
+              if (!container) return;
+              var iframe = container.querySelector('iframe');
+              if (iframe) {
+                iframe.style.setProperty('width', '100%', 'important');
+                iframe.removeAttribute('width');
+              } else {
+                setTimeout(resizeJobber, 200);
+              }
+            }
+            resizeJobber();
+          })();
+        </script>
       </div>
 
       <!-- SIDEBAR INFO -->
