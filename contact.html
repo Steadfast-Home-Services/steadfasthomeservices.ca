@@ -18,7 +18,7 @@
   <meta name="twitter:description" content="Get a free quote from Steadfast Home Services. Call 289-621-3035 or fill out the form. Serving the Niagara Region." />
   <meta name="twitter:image" content="https://steadfasthomeservices.ca/assets/logo.png" />
   <link rel="preload" href="styles.css" as="style" />
-  <link rel="dns-prefetch" href="https://formspree.io" />
+  <link rel="dns-prefetch" href="https://d3ey4dbjkt2f6s.cloudfront.net" />
   <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -74,55 +74,12 @@
   <section class="contact-section">
     <div class="contact-inner">
 
-      <!-- FORM -->
-      <form
-        class="contact-form"
-        action="https://formspree.io/f/mpqokwlk"
-        method="POST"
-      >
-        <div class="form-row">
-          <div class="form-group">
-            <label for="name">Full Name <span class="required">*</span></label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required />
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone Number <span class="required">*</span></label>
-            <input type="tel" id="phone" name="phone" placeholder="(905) 555-0000" required />
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label for="email">Email Address <span class="required">*</span></label>
-          <input type="email" id="email" name="email" placeholder="john@email.com" required />
-        </div>
-
-        <div class="form-group">
-          <label for="service">Service You're Looking For <span class="required">*</span></label>
-          <select id="service" name="service" required>
-            <option value="" disabled selected>Select a service...</option>
-            <option value="Lawn Mowing & Edging">Lawn Mowing &amp; Edging</option>
-            <option value="Snow Plowing & Salting">Snow Plowing &amp; Salting</option>
-            <option value="Spring Cleanup">Spring Cleanup</option>
-            <option value="Fall Cleanup">Fall Cleanup</option>
-            <option value="Garden Weed Picking (Add-On)">Garden Weed Picking (Add-On)</option>
-            <option value="Year-Round Bundle">Year-Round Bundle</option>
-            <option value="Not Sure / General Inquiry">Not Sure / General Inquiry</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Tell us about your property, any specific needs, or questions you have..."></textarea>
-        </div>
-
-        <!-- Honeypot spam prevention -->
-        <input type="text" name="_gotcha" style="display:none" />
-
-        <!-- Redirect after submission -->
-        <input type="hidden" name="_next" value="https://steadfasthomeservices.ca/contact?sent=true" />
-
-        <button type="submit" class="btn-primary btn-submit">Send My Request &rarr;</button>
-      </form>
+      <!-- FORM — Jobber work request embed -->
+      <div class="contact-form">
+        <div id="ba23e5e8-1fd2-4794-94de-17b968d4470d-1238116"></div>
+        <link rel="stylesheet" href="https://d3ey4dbjkt2f6s.cloudfront.net/assets/external/work_request_embed.css" media="screen" />
+        <script src="https://d3ey4dbjkt2f6s.cloudfront.net/assets/static_link/work_request_embed_snippet.js" clienthub_id="ba23e5e8-1fd2-4794-94de-17b968d4470d-1238116" form_url="https://clienthub.getjobber.com/client_hubs/ba23e5e8-1fd2-4794-94de-17b968d4470d/public/work_request/embedded_work_request_form?form_id=1238116"></script>
+      </div>
 
       <!-- SIDEBAR INFO -->
       <div class="contact-info">
@@ -162,10 +119,6 @@
     </div>
   </section>
 
-  <!-- SUCCESS MESSAGE (shown via JS if ?sent=true) -->
-  <div class="success-banner" id="successBanner" style="display:none;">
-    <strong>Message sent!</strong> We'll get back to you within 24 hours.
-  </div>
 
   <!-- FOOTER -->
   <footer>
@@ -217,13 +170,6 @@
     </div>
   </footer>
 
-  <script>
-    // Show success message if redirected back after form submission
-    if (window.location.search.includes('sent=true')) {
-      document.getElementById('successBanner').style.display = 'block';
-      window.scrollTo(0, 0);
-    }
-  </script>
 
 </body>
 </html>
