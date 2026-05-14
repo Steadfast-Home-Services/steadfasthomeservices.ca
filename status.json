@@ -16,12 +16,12 @@
   "season": "Spring Season",
   "status": "Active",
   "today_area": "St. Catharines",
-  "last_updated": "April 5, 2026",
+  "last_updated": "May 14, 2026",
   "alert": "",
 
   "services": [
     { "name": "Spring Cleanup",       "icon": "🌱", "state": "active"   },
-    { "name": "Lawn Mowing & Edging", "icon": "✂️", "state": "upcoming" },
+    { "name": "Lawn Mowing & Edging", "icon": "✂️", "state": "active" },
     { "name": "Snow Removal",         "icon": "❄️", "state": "done"     }
   ]
 }
