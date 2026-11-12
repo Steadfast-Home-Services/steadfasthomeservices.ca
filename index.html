@@ -141,9 +141,9 @@
         </div>
       </div>
       <div id="cardServices">
-        <div class="job-item"><div class="job-icon">🌱</div><div class="job-info"><div class="job-name">Spring Cleanup</div><div class="job-bar"><div class="job-bar-fill bar-gold"></div></div></div><span class="job-status status-progress">Active</span></div>
-        <div class="job-item"><div class="job-icon">✂️</div><div class="job-info"><div class="job-name">Lawn Mowing &amp; Edging</div><div class="job-bar"><div class="job-bar-fill bar-grey"></div></div></div><span class="job-status status-oncall">Starting Soon</span></div>
-        <div class="job-item"><div class="job-icon">❄️</div><div class="job-info"><div class="job-name">Snow Removal</div><div class="job-bar"><div class="job-bar-fill bar-green"></div></div></div><span class="job-status status-complete">Season Over</span></div>
+        <div class="job-item"><div class="job-icon">🌱</div><div class="job-info"><div class="job-name">Spring Cleanup</div><div class="job-bar"><div class="job-bar-fill bar-gold"></div></div></div><span class="job-status status-progress">Season Over</span></div>
+        <div class="job-item"><div class="job-icon">✂️</div><div class="job-info"><div class="job-name">Lawn Mowing &amp; Edging</div><div class="job-bar"><div class="job-bar-fill bar-gold"></div></div></div><span class="job-status status-progress">Season Over</span></div>
+        <div class="job-item"><div class="job-icon">❄️</div><div class="job-info"><div class="job-name">Snow Removal</div><div class="job-bar"><div class="job-bar-fill bar-green"></div></div></div><span class="job-status status-complete">Active</span></div>
       </div>
       <div class="crew-item">
         <div class="crew-avatar">BC</div>
@@ -175,8 +175,8 @@
 
       <div class="service-card">
         <div class="service-icon">❄️</div>
-        <h3>Snow Plowing &amp; Salting</h3>
-        <p>Triggered at 2 cm+ snowfall, 24/7 during snow season. We hand shovel every property and apply quality ice melt — before you wake up.</p>
+        <h3>Snow Shoveling and Salting</h3>
+        <p>Triggered at 5 cm+ snowfall, 24/7 during snow season. We hand shovel every property and apply quality ice melt — before you wake up.</p>
         <a href="services.html#snow" class="service-link">Learn more &rarr;</a>
       </div>
 
@@ -267,7 +267,7 @@
         <div class="price-desc">Winter season pass — Nov through Apr<br />Seasonal service agreement required</div>
         <hr class="price-divider" />
         <ul class="features-list">
-          <li class="feature-item included">Triggered at 2 cm+ snowfall</li>
+          <li class="feature-item included">Triggered at 5 cm+ snowfall</li>
           <li class="feature-item included">Driveway &amp; front walkway plowing</li>
           <li class="feature-item included">Salt / ice melt application</li>
           <li class="feature-item included">Pre &amp; post-storm SMS alerts</li>
@@ -370,10 +370,10 @@
 
         // Service items
         const stateMap = {
-          active:   { label: 'Active',     css: 'status-progress', bar: 'bar-gold'  },
+          active:   { label: 'Active',     css: 'status-complete', bar: 'bar-green'  },
           upcoming: { label: 'Starting Soon', css: 'status-oncall', bar: 'bar-grey' },
           standby:  { label: 'On Call',    css: 'status-oncall',   bar: 'bar-grey'  },
-          done:     { label: 'Season Over', css: 'status-complete', bar: 'bar-green' }
+          done:     { label: 'Season Over', css: 'status-progress', bar: 'bar-gold' }
         };
 
         const container = document.getElementById('cardServices');
